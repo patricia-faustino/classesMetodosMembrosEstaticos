@@ -22,11 +22,9 @@ namespace areaTriangulo
             y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double p = (x.A + x.B + x.C) / 2;
-            double aX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+            double aX = x.Area();
 
-            p = (y.A + y.B + y.C) / 2;
-            double aY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+            double aY = y.Area();
 
 
 
